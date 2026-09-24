@@ -9,11 +9,19 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
-        studio: "rounded-none bg-primary px-6 text-primary-foreground shadow-none hover:bg-foreground",
-        studioLight: "rounded-none bg-studio-light px-6 text-foreground shadow-none hover:bg-secondary",
-        studioOutline: "rounded-none border border-studio-light/60 bg-transparent px-6 text-studio-light shadow-none hover:bg-studio-light hover:text-foreground",
-        studioGhost: "rounded-none border border-foreground/25 bg-transparent px-6 text-foreground shadow-none hover:bg-foreground hover:text-background",
+        default: "bg-primary text-primary-foreground shadow hover:bg-studio-orange-dark",
+        studio:
+          "rounded-full bg-primary px-7 text-primary-foreground font-semibold shadow-md hover:bg-studio-orange-dark hover:scale-[1.02] transition-all",
+        studioPill:
+          "rounded-full bg-primary px-6 text-primary-foreground text-xs font-semibold uppercase tracking-wider shadow hover:bg-studio-orange-dark hover:scale-105 transition-all",
+        studioLight:
+          "rounded-full bg-studio-light px-7 text-primary font-semibold shadow-md hover:bg-studio-cream hover:text-studio-orange-dark hover:scale-[1.02] transition-all",
+        studioOutline:
+          "rounded-full border-2 border-studio-light bg-transparent px-7 text-studio-light font-semibold shadow-none hover:bg-studio-light hover:text-primary transition-all",
+        studioOutlineOrange:
+          "rounded-full border-2 border-primary bg-transparent px-7 text-primary font-semibold shadow-none hover:bg-primary hover:text-primary-foreground transition-all",
+        studioGhost:
+          "rounded-full border border-border bg-card/60 px-7 text-foreground font-medium shadow-none hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all",
         destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
           "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
